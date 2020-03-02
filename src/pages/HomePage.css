@@ -1,0 +1,26 @@
+.container {
+  padding: 2rem 4rem;
+}
+.search-wrapper {
+  display: flex;
+  align-items: center;
+}
+.display-map-container {
+  display: flex;
+}
+.input-find {
+  width: 50%;
+  margin: 1.5rem 3rem 1.5rem 0;
+}
+.map-aside {
+  width: 60%;
+}
+.label-aside {
+  padding: 4rem;
+}
+.label-aside > div {
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #050505;
+  font-weight: 200;
+}

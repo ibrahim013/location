@@ -1,0 +1,13 @@
+.input-element {
+  font-size: 1.2rem;
+  padding: 0.2rem 1rem;
+  display: block;
+  height: 2.3rem;
+  width: 100%;
+}
+
+.input-element:focus {
+  outline: none;
+  border: 1px solid #050505;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
