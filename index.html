@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpatialKey Skills Exercise</title>
+    <script>
+        /**
+         * @param addressString - the address you want to geocode
+         *
+         * @return A Promise that resolves with a result after a few seconds
+         * The "result" is an array of GeoJSON Objects (http://geojson.org/geojson-spec.html#geojson-objects)
+         */
+        function mockApi_geocodeAddress(addressString) {
+            // TODO: make this async
+            return [
+                {
+                    "properties": {
+                        "city": "Austin",
+                        "street": "111 Congress Ave S",
+                        "postalCode": "78701",
+                        "state": "TX",
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-97.7457639, 30.2635381]
+                    },
+                    "type": "Feature"
+                }
+            ];
+        }
+
+        /**
+         *
+         * @param latitude
+         * @param longitude
+         *
+         * @return A Promise that resolves with the result of the lookup
+         * The result is an Object with keys that represent each risk
+         */
+        function mockApi_lookupUnderwritingRisks(latitude, longitude) {
+            // TODO: make this async
+            return {
+                sk_risk_fema: 'Minimal Risk',
+                sk_risk_katrisk: 'High Risk'
+            };
+        }
+    </script>
+</head>
+<body>
+    <!-- TODO: make Kathy a happy user -->
+</body>
+</html>
